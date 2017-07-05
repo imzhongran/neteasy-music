@@ -1,0 +1,91 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul {list-style: none;}
+html {font-size: 100px}
+body {font-size: 0.14rem}
+a {text-decoration: none;}
+
+#global {width: 100%; display: none; justify-content: space-between; position: fixed; left: 0; bottom: 0; height: 0.5rem; text-align: center; background-color: rgba(255,255,255,0.8)}
+#audioBtn {width: 0.4rem; height: 0.4rem; position: absolute; right: 0.1rem; top: 0.05rem; background-size: cover;}
+.play {background-image: url(../images/playbar_btn_pause.png)}
+.pause {background-image: url(../images/playbar_btn_play.png)}
+.audioMes {display: flex; align-items: center; width: 80%}
+.audioMes .pic {width: 0.36rem; height: 0.36rem; margin: 0 0.05rem;}
+.audioMes .pic img {width: 100%;}
+.audioMes .text {text-align: left; display: flex; flex-direction: column; justify-content: center;}
+.audio_name {font-size: 0.16rem;}
+.audio_state {color: #8a8a8a}
+
+.tab {}
+.tab .active {color: #ce3d3e; border-bottom: solid 2px #ce3d3e;}
+#container {padding-top: 1.04rem;}
+.tab .header {position: fixed; width: 100%; z-index: 100;}
+.tab .header h3 {height: 0.56rem; padding: 0 0.25rem; background-color: #ce3d3e; line-height: 0.56rem; color: #fbfbfb; font-size: 0.2rem; font-weight: 600}
+.tab .header ul {display: flex; background-color: #fff;}
+.tab .header ul li {height: 0.48rem; line-height: 0.48rem; text-align: center; font-size: 0.18rem; width: 25%;}
+
+.home .banner {position: relative;}
+.home .banner img {width: 100%; display: block;}
+.bannerList {}
+.bannerList .ac {display: block;}
+.bannerList li {display: none;}
+.tabList {position: absolute; bottom: 0.1rem; display: flex; justify-content: center; width: 100%}
+.tabList .ac {background-color: #ce3d3e}
+.tabList li {width: 0.15rem; height: 0.15rem; border-radius: 50%; margin: 0 0.02rem; background-color: #fff}
+
+.home .recommend {}
+.home .recommend .title {padding: 0 0.05rem; display: flex; justify-content: space-between; align-items: center; height: 0.4rem;}
+.home .recommend .title span {display: flex; align-items: center;}
+.home .recommend .title span:nth-child(1) {font-size: 0.18rem;}
+.home .recommend .title img {width: 0.2rem; margin-right: 0.05rem;}
+.home .recommend .songlist {display: flex; flex-wrap: wrap;}
+.home .recommend .item {width: 30%; margin: 1.5%; position: relative;}
+.home .recommend .item .con {color: #272727; display: block;}
+.home .recommend .item img {width: 100%; display: block;}
+.home .recommend .item .like {width: 100%; text-align: right; height: 0.25rem; line-height: 0.25rem; color: #fff; position: absolute; top: 0; left: 0; background-color: rgba(0,0,0,0.3); padding-right: 0.05rem;}
+.home .recommend .item p {font-size: 0.12rem; overflow: hidden;}
+
+#detailPrev {position: fixed; z-index: 10; top: 0; left: 0; height: 2rem; width: 100%; padding-left: 0.1rem; padding-right: 0.2rem; background-color: #2c211d; color: #fff;}
+#detailPrev > p {padding-left: 0.5rem; font-size: 0.2rem; height: 0.5rem; line-height: 0.5rem;}
+#detailPrev .con {display: flex;}
+#detailPrev .pic {position: relative; width: 1.2rem; height: 1.2rem; margin-right: 0.2rem;}
+#detailPrev .pic p {position: absolute; left: 0; top: 0; width: 100%; height: 0.2rem; line-height: 0.2rem; text-align: right; background-color: rgba(0,0,0,0.6)}
+#detailPrev .pic img {width: 100%}
+#detailPrev .des {display: flex; flex-direction: column; justify-content: space-around;}
+#detailPrev .text {line-height: 0.2rem;}
+#detailPrev .author {height: 0.3rem; display: flex; align-items: center;}
+#detailPrev .author img {height: 100%; border-radius: 50%; margin-right: 0.03rem;}
+.detailMain {padding-top: 2rem;}
+.playAll {height: 0.37rem; line-height: 0.37rem; border-bottom: solid 1px #f9e8f4; padding-left: 0.4rem; margin-left: 0.08rem;}
+#musicList {padding: 0.2rem 0.3rem 0 0.3rem; font-size: 0.16rem;}
+#musicList li {padding-bottom: 0.2rem; margin-bottom: 0.15rem; border-bottom: solid 1px #eee; position: relative;}
+#musicList li p {margin-bottom: 0.1rem; width: 80%;}
+#musicList li p:nth-child(2) {color: #797674; font-size: 0.14rem;}
+#musicList li span {position: absolute; top: 0; right: 0; width: 0.3rem; height: 0.3rem; background-size: cover;}
+#musicList li span.yes {background-image: url("../images/yes.png");}
+#musicList li span.no {background-image: url("../images/no.png");}
+
+.songlistWrap {padding: 0 0.1rem;}
+.songlistWrap .listAll {border-left: solid 0.03rem #ce3d3e; padding-left: 0.07rem; margin: 0.03rem 0;}
+.songlistWrap .songList {display: flex; flex-wrap: wrap;}
+.songlistWrap .songList .item3 {width: 48%; margin-right: 0.05rem; position: relative;}
+.songlistWrap .songList .con {color: #272727; display: block;}
+.songlistWrap .songList .like {width: 100%; text-align: right; height: 0.25rem; line-height: 0.25rem; color: #fff; position: absolute; top: 0; left: 0; background-color: rgba(0,0,0,0.3); padding-right: 0.05rem;}
+.songlistWrap .songList img {width: 100%; display: block;}
+.songlistWrap .songList .des {height: 0.3rem; line-height: 0.3rem}
+
+.collectedListWrap {padding: 0 0.1rem}
+.collectedListWrap .listAll {border-left: solid 0.03rem #ce3d3e; height: 0.2rem; line-height: 0.2rem; padding-left: 0.07rem; margin: 0.05rem 0;}
+#collectedList {padding: 0 0.2rem; border-top: solid 1px #eee;}
+#collectedList .item4 {display: flex; position: relative; flex-direction: column; justify-content: space-around; height: 0.6rem; border-bottom: solid 1px #eee;}
+#collectedList .item4 .music {font-size: 0.16rem;}
+#collectedList .item4 .author {color: #797674; font-size: 0.14rem;}
+#collectedList .item4 span {position: absolute; left: -0.17rem; top: 0.2rem; font-size: 0.16rem; color: #797674}
+#collectedList .item4 button {position: absolute; top: 0.2rem; right: 0; border: none; outline: none; padding: 0.05rem 0.1rem; border-radius: 3px; background-color: #ce3d3e; color: #fff;}
+
+.orderWrap {margin-top: 0.08rem;}
+#orderItem {display: flex; margin-bottom: 0.03rem; border-bottom: solid 1px #e1e2e4;}
+#orderItem .pic {width: 1.23rem; height: 1.23rem; overflow: hidden; margin-right: 0.1rem;}
+#orderItem .pic img {display: block; width: 100%;}
+#orderItem .list {display: flex; flex-direction: column; justify-content: center; line-height: 0.32rem; color: #5f6062;}
+
+

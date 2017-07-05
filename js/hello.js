@@ -1,0 +1,1 @@
+setTimeout(router("tab"), 3000)
