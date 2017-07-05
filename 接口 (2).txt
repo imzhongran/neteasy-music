@@ -1,3 +1,0 @@
-url:"https://api.imjad.cn/cloudmusic/?type=playlist&id="+id,
-
-http://musicapi.duapp.com/api.php?type=url&id="+music.id
